@@ -1,0 +1,16 @@
+.tasksList p {
+  display: inline;
+  margin: 0;
+}
+
+.tasksList li:hover button.remove {
+  display: block;
+}
+
+.tasksList li button.remove {
+  display: none;
+}
+
+button.remove {
+  float: right;
+}
