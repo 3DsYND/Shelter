@@ -12,9 +12,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "REACT_APP_API_ENDPOINT=/api react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:deploy": "rsync -avzhe ssh --progress ./build/* defyurin@34.83.249.17:/home/defyurin/yurin.space/shelter/www"
+
   },
   "eslintConfig": {
     "extends": "react-app"
